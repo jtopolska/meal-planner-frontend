@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Bitter', serif;  
+  margin: 0;
+  }
+
+.App {
+  padding: 50px;
+}
+
+.bg {
+  object-fit: cover;
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.input {
+  display: flex;
+  width: 50%;
+  margin-bottom: 40px;
+}
+
+h1 {
+  color: gold;
+}
+
+input {
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  background: #313133;
+  padding: 20px;
+  font-family: 'Bitter', serif;
+  font-weight: bold;
+}
+
+button {
+  padding: 0 35px;
+  background-color: #014d3b;
+  color: white;
+  font-size: 20px;
+  font-family: 'Bitter', serif;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.item {
+  display: flex;
+  width: 50%;
+  background: #313133;
+  margin-top: 20px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.icons {
+  margin-left: 0;
+  margin-top: 7px;
+  width: 10%;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.edit {
+  margin-right: 10px;
+}
+
+.item p {
+  margin: 0;
+  width: 90%;
+  font-size: 20px;
+  color: gold;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+}
+
+@media all and (max-width: 1100px) {
+  .input, .item {
+    width: 65%;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .input, .item {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 700px) {
+  input {
+    font-size: 18px;
+    padding: 15px;
+  }
+  
+  button {
+    padding: 0 25px;
+    font-size: 18px;
+  }
+
+  .icons {
+    width: 15%;
+  }
+
+  .item p {
+    width: 85%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .App {
+    padding: 25px;
+  }
+
+  .item p {
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media all and (max-width: 420px) {
+  .icons {
+    width: 20%;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
+  .item p {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 350px) {
+  .App {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  button {
+    padding: 0 15px;
+  }
+
+  .item p {
+    font-size: 16px;
+  }
+}
