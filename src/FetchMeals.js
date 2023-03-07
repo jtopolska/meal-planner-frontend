@@ -1,11 +1,10 @@
 import axios from 'axios';
 
-const myURL = 'http://localhost:7000';
+const myURL = 'https://meal-planner-g798.onrender.com';
 
 export const getAllTitles = (setMeals) => {
     axios.get(myURL)
     .then(({data}) => {
-        console.log(data)
         setMeals(data)    
     })
 }
@@ -28,10 +27,8 @@ export const editTitle = (mealId, title, setTitle, setEdit, setMeals) => {
 }
 
 export const deleteMeal = (_id, setMeals) => {
-    console.log(_id)
     axios.post(myURL + '/deleteMeal', {_id})
     .then(() => {
-        console.log(setMeals)
         getAllTitles(setMeals);
     })
 }
